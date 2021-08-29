@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-size: 24px;
+}
+
+.name h1 {
+    color: rgb(230, 138, 0);
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.name p {
+    color: rgb(230, 138, 0);
+    font-size: 40px;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+	border: 0px;
+    margin-right: 30px;
+}
+
+.info li {
+    margin: 10px 20px;
+}
+
+.info i {
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+hr {
+    background-color: rgb(230, 138, 0);
+    border: 2px solid rgb(230, 138, 0);
+    margin: 50px 0px;
+}
+
+.title {
+    width: 30%;
+}
+
+.text {
+    width: 70%;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(230, 138, 0);
+}
+
+.quote q {
+    font-family: serif;
+    font-size: 28px;
+}
+
+.content li {
+    margin: 10px 0px;
+}
+
+.content span {
+    color: rgb(230, 138, 0);
+}
+
+.skills .text {
+    display: flex;
+}
+
+.skills .text ul {
+    flex: 1;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.footer li i {
+    font-size: 30px; 
+    color: rgb(0, 0, 0);
+    margin: 0px 20px;
+}
+
+.footer li i:hover {
+    color: rgb(82, 82, 82);
+}
+
