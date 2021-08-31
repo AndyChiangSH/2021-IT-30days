@@ -1,0 +1,5 @@
+requests
+certifi>=2017.4.17
+idna<3,>=2.5
+chardet<5,>=3.0.2
+urllib3<1.27,>=1.21.1
