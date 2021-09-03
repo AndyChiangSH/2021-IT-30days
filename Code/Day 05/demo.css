@@ -1,0 +1,61 @@
+.name {
+    color: red;
+}
+.hex {
+    color: #00946f;
+}
+.rgb {
+    color:rgb(30, 27, 180);
+}
+.hsl {
+    color:hsl(298, 71%, 46%)
+    
+}
+.c0 {
+    background-color: yellow;
+}
+.c1 {
+    opacity: 0.5;
+}
+.c2 {
+    font-size: 20px;
+}
+.c3 {
+    font-size: 50%;
+}
+.c4 {
+    font-weight: lighter;
+}
+.c5 {
+    font-weight: 800;
+}
+.c6 {
+    font-family: serif
+}
+.c7 {
+    font-family: cursive;
+}
+.c8 {
+    line-height: 50px;
+}
+.c9 {
+    text-align: center;
+}
+.c10 {
+    text-align: right;
+}
+
+.space {
+    margin: 50px;
+}
+.d1 {
+    width: 400px;
+    height: 200px;
+    background-color:blue;
+    color: white;
+}
+.d2 {
+    width: 400px;
+    height: 200px;
+    border: 5px dashed blue;
+}
