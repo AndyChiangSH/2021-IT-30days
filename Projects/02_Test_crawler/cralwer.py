@@ -8,9 +8,9 @@ with open("crawl_me.html", "r", encoding="utf8") as file:
 # BeautifulSoup解析原始碼
 soup = BeautifulSoup(response, "html.parser")
 
-# # find h1
-# h1 = soup.find("h1")
-# print(h1)
+# find h1
+h1 = soup.find("h1")
+print(h1)
 
 # # find_all h2
 # h2s = soup.find_all("h2")

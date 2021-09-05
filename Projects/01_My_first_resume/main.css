@@ -148,7 +148,7 @@ h3 {
 }
 
 .skills .text ul {
-    flex: 1;
+    width: 50%;
 }
 
 .footer ul {

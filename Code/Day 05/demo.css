@@ -59,3 +59,23 @@
     height: 200px;
     border: 5px dashed blue;
 }
+.d3 {
+    width: 400px;
+    height: 200px;
+    border-top: 5px dashed blue;
+    border-right: 2px solid green;
+}
+.d4 {
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.d5 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+}
