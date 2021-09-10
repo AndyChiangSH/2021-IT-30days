@@ -14,3 +14,4 @@ print(candyNumber)
 
 print(candyNumber.keys())
 print(candyNumber.values())
+print(candyNumber.items())
