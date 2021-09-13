@@ -7,21 +7,11 @@ with open("crawl_me.html", "r", encoding="utf8") as file:
 
 # BeautifulSoup解析原始碼
 soup = BeautifulSoup(response, "html.parser")
+# print(soup.prettify())
 
 # find h1
-h1 = soup.find("h1")
-print(h1)
-
-# # find_all h2
-# h2s = soup.find_all("h2")
-# print(h2s)
-# for h2 in h2s:
-#     print(h2)
-
-# # find_all h1 and h2
-# h1_h2s = soup.find_all(["h1", "h2"], limit=3)
-# for h1_h2 in h1_h2s:
-#     print(h1_h2)
+# h1 = soup.find("h1")
+# print(h1)
 
 # # find by class
 # container = soup.find("div", class_="container")
@@ -31,17 +21,28 @@ print(h1)
 # this = soup.find("h2", id="this")
 # print(this)
 
+# find_all h2
+# h2s = soup.find_all("h2")
+# print(h2s)
+# print(h2s[1])   # 使用索引值
+
+# # find_all h1 and h2
+# h1_h2s = soup.find_all(["h1", "h2"], limit=3)
+# print(h1_h2s)
+# print(len(h1_h2s))
+
+
 # # select_one
 # h1 = soup.select_one("h1")
 # print(h1)
 
-# # select
+# select
 # h2s = soup.select("h2")
-# for h2 in h2s:
-#     print(h2)
+# print(h2s)
+# print(h2s[1])
 
 # # select by class
-# p = soup.select_one("div.container p")
+# p = soup.select_one("div.container")
 # print(p)
 
 # # select by id
@@ -64,3 +65,4 @@ print(h1)
 # # 取得屬性值
 # img = soup.find("img")
 # print(img["src"])
+# print(img.get("src"))
