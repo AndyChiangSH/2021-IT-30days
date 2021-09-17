@@ -18,8 +18,6 @@
 
 看完還是霧煞煞嗎? 那我們來看這段影片：
 
-{%youtube Y8Tko2YC5hA %}
-
 <!-- {%youtube Y8Tko2YC5hA %} -->
 
 > 因為GitHub不支援嵌入Youtube影片，因此連結我就放在底下了：
