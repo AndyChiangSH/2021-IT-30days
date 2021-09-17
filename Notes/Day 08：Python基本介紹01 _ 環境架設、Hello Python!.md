@@ -18,7 +18,7 @@
 
 看完還是霧煞煞嗎? 那我們來看這段影片：
 
-{%youtube Y8Tko2YC5hA %}
+<!-- {%youtube Y8Tko2YC5hA %} -->
 
 以上影片大概說明了幾個Python的優點：
 
