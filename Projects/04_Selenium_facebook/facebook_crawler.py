@@ -1,11 +1,12 @@
-from selenium import webdriver
 import time
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 # 你的資訊
 url = "https://www.facebook.com/"
-email = "andy10801@gmail.com"
-password = "andygood"
+email = "YOUR EMAIL"
+password = "YOUR PASSWORD"
 
 # 防止跳出通知
 chrome_options = webdriver.ChromeOptions()
@@ -14,8 +15,9 @@ prefs = {
 }
 chrome_options.add_experimental_option("prefs", prefs)
 
-# 開啟下載的chromedriver
-driver = webdriver.Chrome("./chromedriver", chrome_options=chrome_options)
+# 使用ChromeDriverManager自動下載chromedriver
+driver = webdriver.Chrome(
+    ChromeDriverManager().install(), chrome_options=chrome_options)
 
 # 最大化視窗
 driver.maximize_window()
@@ -30,7 +32,7 @@ driver.find_element_by_name("login").click()
 time.sleep(5)
 
 # 進入聯合新聞網專頁
-driver.get("https://www.facebook.com/myudn")
+driver.get("https://www.facebook.com/crazyck101")
 
 time.sleep(5)
 

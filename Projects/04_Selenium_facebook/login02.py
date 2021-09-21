@@ -4,8 +4,8 @@ import time
 
 # 你的資訊
 url = "https://www.facebook.com/"
-email = "andy10801@gmail.com"
-password = "andygood"
+email = "YOUR EMAIL"
+password = "YOUR PASSWORD"
 
 # 防止跳出通知
 chrome_options = webdriver.ChromeOptions()
