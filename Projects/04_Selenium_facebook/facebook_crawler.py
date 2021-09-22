@@ -1,4 +1,6 @@
+import os
 import time
+import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -31,8 +33,8 @@ driver.find_element_by_name("login").click()
 
 time.sleep(5)
 
-# 進入聯合新聞網專頁
-driver.get("https://www.facebook.com/crazyck101")
+# 進入木棉花專頁
+driver.get("https://www.facebook.com/emuse.com.tw")
 
 time.sleep(5)
 
@@ -42,22 +44,36 @@ for x in range(3):
     print("scroll")
     time.sleep(5)
 
-soup = BeautifulSoup(driver.page_source, "html.parser")
+root = BeautifulSoup(driver.page_source, "html.parser")
 
 # 定位文章標題
-titles = soup.find_all(
+titles = root.find_all(
     "div", class_="kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q")
 for title in titles:
     # 定位每一行標題
     posts = title.find_all("div", dir="auto")
     # 如果有文章標題才印出
-    if len(posts):
+    if len(posts) != 0:
         for post in posts:
             print(post.text)
 
     print("-" * 30)
 
-# 等待10秒
-time.sleep(10)
+# 建立資料夾
+if not os.path.exists("images"):
+    os.mkdir("images")
+
+# 下載圖片
+images = root.find_all(
+    "img", class_=["i09qtzwb n7fi1qx3 datstx6m pmk7jnqg j9ispegn kr520xx4 k4urcfbm bixrwtb6", "i09qtzwb n7fi1qx3 datstx6m pmk7jnqg j9ispegn kr520xx4 k4urcfbm"])
+if len(images) != 0:
+    for index, image in enumerate(images):
+        img = requests.get(image["src"])
+        with open(f"images/img{index+1}.jpg", "wb") as file:
+            file.write(img.content)
+        print(f"第 {index+1} 張圖片下載完成!")
+
+# 等待5秒
+time.sleep(5)
 # 關閉瀏覽器
 driver.quit()
