@@ -118,9 +118,16 @@ with open('data.json', 'w', encoding='utf-8') as file:
 
 執行後，在同個目錄下就會出現`data.json`這個檔案，用記事本打開後如果有東西那就是成功了。
 
-不過看到的應該是一大串編碼，沒辦法知道資料是不是對的，這邊偷偷告訴你一個好康的，到 [json editor](https://jsoneditoronline.org/) 這個網站，就可以很方便的確認資料是否正確喔~
+不過看到的應該是一大串編碼，沒辦法知道資料是不是對的，這邊偷偷告訴你一個好康的，到 [json editor](https://jsoneditoronline.org/) 這個網站，幫你將json資料轉為樹狀顯示，就可以很方便的確認資料是否正確~
 
-[完整程式碼](https://github.com/AndyChiangSH/2021-IT-30days/blob/main/Projects/03_PTT_Gossiping/crawler.py)請到GitHub上面看哦~ (不想貼出來佔空間了)
+![](https://i.imgur.com/hc5Dv4z.png)
+
+點 "Open from disk" 就可以匯入剛才的json檔囉。
+
+![](https://i.imgur.com/CrwQU3b.jpg)
+
+
+[完整程式碼](https://github.com/AndyChiangSH/2021-IT-30days/blob/main/Projects/03_PTT_Gossiping/crawler.py)請到GitHub上面看~ (不想貼出來佔空間了)
 
 ## 小結
 
