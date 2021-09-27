@@ -4,12 +4,9 @@ import pandas as pd
 
 # 台灣證券交易所，個股日成交資訊
 url = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20210801&stockNo=0050"
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36"
-}
 
 # 取得股票資料json字串
-response = requests.get(url, headers=headers)
+response = requests.get(url)
 # print(response.text)
 
 # 從json字串轉為python的字典格式
