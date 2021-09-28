@@ -9,8 +9,7 @@ headers = {
 
 # 從1到12月
 for m in range(1, 13):
-    url = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=2020{0:02d}01&stockNo=0050".format(
-        m)
+    url = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=2020{0:02d}01&stockNo=0050".format(m)
     print(url)
 
     # 取得股票資料json字串
