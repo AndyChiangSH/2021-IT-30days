@@ -16,8 +16,8 @@ plt.rcParams['font.sans-serif'] = ['Taipei Sans TC Beta']
 
 # 繪圖
 plt.plot(date, high_price, color="#ff2121")
-plt.plot(date, low_price, color="#00bd42")
-plt.plot(date, end_price, color="#005de0", linestyle="--")
+plt.plot(date, low_price, color="#00bd42", linewidth=5)
+plt.plot(date, end_price, color="#005de0", linestyle="dashed")
 plt.xlabel("日期")
 plt.ylabel("價格")
 plt.legend(["最高價", "最低價", "收盤價"], loc="lower right")
